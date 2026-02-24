@@ -11,6 +11,19 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Subabase
+  supabase_flutter: ^2.12.0
+  ##
+
+  # Logger
+  logger: ^2.6.2
+
+  # Freezed
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.11.0
+  ##
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
