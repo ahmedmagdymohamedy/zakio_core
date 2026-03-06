@@ -4,10 +4,11 @@ import 'package:zakio_core/data/supabase/supabase_manager.dart';
 
 abstract class AuthManager {
   static StreamSubscription<AuthState>? authSubscription;
-  static Future<bool> signInWithOtp(String email, Function() onLogin) async {
+  static Future<bool> signInWithOtp({String? email, String? phone, required Function() onLogin}) async {
     try {
       await SupabaseManager.supabase.auth.signInWithOtp(
         email: email,
+        phone: phone,
         emailRedirectTo: "io.supabase.flutterquickstart://login-callback/",
       );
 
