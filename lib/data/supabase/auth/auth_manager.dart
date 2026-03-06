@@ -23,6 +23,7 @@ abstract class AuthManager {
       );
       return true;
     } catch (e) {
+      print(e);
       return false;
     }
   }
