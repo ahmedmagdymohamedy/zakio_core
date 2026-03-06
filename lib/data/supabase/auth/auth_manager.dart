@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/rendering.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:zakio_core/data/supabase/supabase_manager.dart';
 
@@ -23,7 +24,7 @@ abstract class AuthManager {
       );
       return true;
     } catch (e) {
-      print(e);
+      debugPrint(e.toString());
       return false;
     }
   }
